@@ -16,7 +16,7 @@ h6 {
    margin-top: -.5rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
    section {
       width: 50%;
    }

@@ -9,7 +9,7 @@ main {
    padding: 30px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
    main {
       width: 75%;
       flex-direction: row;
