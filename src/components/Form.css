@@ -12,6 +12,7 @@ button {
    border-radius: 6px;
    font-family: 'Poppins', sans-serif;
    font-size: .7rem;
+   cursor: pointer;
 }
 
 .trial {
@@ -42,20 +43,41 @@ form {
    box-shadow: 0px 5.5px 0px rgba(0, 0, 0, 0.2);
 }
 
-input {
-   padding: 13px 20px;
-   margin: 0 0 15px 0;
+.input-container {
+   position: relative;
    border: 1px solid var(--light-gray);
+   margin: 0 0 15px 0;
    border-radius: 5px;
+}
+ 
+.input-container > img {
+   position: absolute;
+   top: 12px;
+   right: 18px;
+   width: 18px;
+   height: auto;
+}
+ 
+.input-container input {
+   padding: 13px 20px;
+   width: 82%;
+   border-radius: 5px;
+   border: none;
    font-family: 'Poppins', sans-serif;
    font-size: .7rem;
    font-weight: 600;
    color: var(--dark-gray);
+   background-color: transparent;
+}
+
+.border-red {
+   border: 1px solid var(--soft-red);
 }
 
 p {
    color: var(--light-blue);
    font-size: .6rem;
+   font-weight: 500;
 }
 p span {
    color: var(--soft-red);
