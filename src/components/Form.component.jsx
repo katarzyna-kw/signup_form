@@ -1,129 +1,78 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, {useState} from 'react'
+import useForm from './useForm'
+import validate from './validate'
 import './Form.css'
 import errorIcon from '../img/icon-error.svg'
 
 export default function Form() {
 
-   //test if first render
-   const firstRender = useRef(true);
+   const [isSubmitted, setIsSubmitted] = useState(false);
 
-   const [disabled, setDisabled] = useState(true);
-   const [firstName, setFirstName] = useState("");
-   const [lastName, setLastName] = useState("");
-   const [email, setEmail] = useState("");
-   const [password, setPassword] = useState("");
-   const [errorFirstName, setErrorFirstName] = useState(null);
-   const [errorLastName, setErrorLastName] = useState(null);
-   const [errorEmail, setErrorEmail] = useState(null);
-   const [errorPassword, setErrorPassword] = useState(null);
-
-   const onSubmit = (e) => {
-      e.preventDefault();
-
-      if (!errorFirstName && !errorLastName && !errorEmail && !errorPassword) {
-         console.log("submitting form with ", email)
-      }
+   const submitForm = () => {
+      setIsSubmitted(true)
+      setTimeout(() => {window.location.reload()}, 1000);
    }
 
-   useEffect(() => {
-      //skip validation on first render
-      if (firstRender.current) {
-         //no longer initial render
-         firstRender.current = false;
-         return;
-      }
+   const {handleChange, values, handleSubmit, errors} = useForm(
+      submitForm, 
+      validate
+   );
 
-      const formValidation =() => {
-         const firstNameValidation = /^[a-zA-Z]+$/ig.test(firstName);
-         const lastNameValidation = /^[a-zA-Z]+$/ig.test(lastName);
-         const emailValidation = !/\S+@\S+\.\S+/.test(email);
-         const passwordValidation = /[a-zA-Z0-9]/.test(password);
-
-         if (!firstNameValidation) {
-            setErrorFirstName("First Name cannot be empty");
-            console.log("error on first name!")
-         } else {
-            setErrorFirstName(null);
-            console.log("no error on first name")
-         }
-
-          if (!lastNameValidation) {
-            setErrorLastName("Last Name cannot be empty");
-            console.log("error on last name!")
-         } else {
-            setErrorLastName(null);
-            console.log("no error on last name")
-         }
-
-         if (emailValidation) {
-            setErrorEmail("Looks like this is not an email");
-            console.log("error on email!")
-         } else {
-            setErrorEmail(null);
-            console.log("no error on email!")
-         }
-
-         if (!passwordValidation) {
-            setErrorPassword("Password cannot be empty");
-            console.log("error on password!")
-         } else {
-            setErrorPassword(null);
-            console.log("error on password!")
-         }
-      };
-      setDisabled(formValidation());
-    }, [firstName, lastName, email, password]);
- 
 
    return (
       <section>
          <button className="trial">
             <span>Try it free 7 days</span> then $20/mo. thereafter
          </button>
-         <form onSubmit={onSubmit}>
-            <div className={errorFirstName ? 'input-container border-red' : 'input-container'}>
+         <form onSubmit={handleSubmit}>
+            <div className={errors.firstName ? 'input-container border-red' : 'input-container'}>
                <input 
                   placeholder="First Name"
                   type="text" 
                   name="firstName"
-                  value={firstName}
-                  onChange={e => setFirstName(e.target.value)}
+                  value={values.firstName}
+                  onChange={handleChange}
                />
-               {errorFirstName && <img className="error-img" src={errorIcon} alt="error: enter valid first name" />}
+               {errors.firstName && <img className="error-img" src={errorIcon} alt="error: enter valid first name" />}
             </div>
-            <div className={errorLastName ? 'input-container border-red' : 'input-container'}>
+            {errors.firstName && <label className="error-text">{errors.firstName}</label>}
+            <div className={errors.lastName ? 'input-container border-red' : 'input-container'}>
                <input 
                   placeholder="Last Name"
                   type="text" 
                   name="lastName"
-                  value={lastName}
-                  onChange={e => setLastName(e.target.value)}
+                  value={values.lastName}
+                  onChange={handleChange}
                />
-               {errorLastName && <img className="error-img" src={errorIcon} alt="error: enter valid last name" />}
+               {errors.lastName && <img className="error-img" src={errorIcon} alt="error: enter valid last name" />}
             </div>
-            <div className={errorEmail ? 'input-container border-red' : 'input-container'}>
+            {errors.lastName && <label className="error-text">{errors.lastName}</label>}
+            <div className={errors.email ? 'input-container border-red' : 'input-container'}>
                <input 
                   placeholder="Email Address"
                   type="email"
                   name="email"           
-                  value={email} 
-                  onChange={e => setEmail(e.target.value)}
+                  value={values.email} 
+                  onChange={handleChange}
                />
-               {errorEmail && <img className="error-img" src={errorIcon}alt="error: enter valid email" />}
+               {errors.email && <img className="error-img" src={errorIcon}alt="error: enter valid email" />}
             </div>
-            <div className={errorPassword ? 'input-container border-red' : 'input-container'}>
+            {errors.email && <label className="error-text">{errors.email}</label>}
+            <div className={errors.password ? 'input-container border-red' : 'input-container'}>
                <input 
                   placeholder="Password"
                   type="password"
-                  name="password"           
-                  value={password} 
-                  onChange={e => setPassword(e.target.value)}
+                  name="password"
+                  value={values.password} 
+                  onChange={handleChange}
                />
-               {errorPassword && <img className="error-img" src={errorIcon} alt="error: a password between 6-16 characters long" />}
+               {errors.password && <img className="error-img" src={errorIcon} alt="error: a password between 6-16 characters long" />}
             </div>
+            {errors.password && <label className="error-text">{errors.password}</label>}
             <button className="submit" type="submit">
                Claim your free trial
             </button>
+            {isSubmitted && <p><span>Thank you for registering!</span></p>}
             <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
          </form>
       </section>

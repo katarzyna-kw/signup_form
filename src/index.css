@@ -8,10 +8,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   --soft-red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
+  --soft-green: hsl(154, 59%, 65%);
   --blue: hsl(248, 32%, 49%);
   --dark-gray: hsl(249, 10%, 26%);
   --light-blue: hsl(246, 25%, 77%);
   --light-gray: hsl(0, 0%, 91%);
+  --green-shadow: hsl(160, 80%, 40%);
+  --neutral-shadow: rgba(0, 0, 0, 0.2);
   --attribution-blue: hsl(228, 45%, 44%);
   --white: hsl(0, 0%, 100%);
 }

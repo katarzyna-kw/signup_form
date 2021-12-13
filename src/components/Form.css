@@ -11,15 +11,14 @@ button {
    color: var(--white);
    border-radius: 6px;
    font-family: 'Poppins', sans-serif;
-   font-size: .7rem;
-   cursor: pointer;
+   font-size: .8rem;
 }
 
 .trial {
    width: 100%;
    background-color: var(--blue);
    margin-bottom: 1rem;
-   box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 6px 0px var(--neutral-shadow);
 }
 
 .trial span {
@@ -30,8 +29,13 @@ button {
    background-color: var(--green);
    font-weight: 600;
    text-transform: uppercase;
-   box-shadow: 0px 3px 0px #15b882;
-   margin-top: 5px;
+   box-shadow: 0px 3px 0px var(--green-shadow);
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+.submit:hover {
+   background-color: var(--soft-green)
 }
 
 form {
@@ -39,14 +43,15 @@ form {
    flex-direction: column;
    background-color: var(--white);
    border-radius: 6px;
-   padding: 30px;
-   box-shadow: 0px 5.5px 0px rgba(0, 0, 0, 0.2);
+   padding: 15px 30px 30px 30px;
+   box-shadow: 0px 5.5px 0px var(--neutral-shadow);
 }
 
 .input-container {
    position: relative;
    border: 1px solid var(--light-gray);
-   margin: 0 0 15px 0;
+   margin: 15px 0 0 0;
+   /* margin: 0 0 0 0; */
    border-radius: 5px;
 }
  
@@ -64,7 +69,7 @@ form {
    border-radius: 5px;
    border: none;
    font-family: 'Poppins', sans-serif;
-   font-size: .7rem;
+   font-size: .8rem;
    font-weight: 600;
    color: var(--dark-gray);
    background-color: transparent;
@@ -74,10 +79,20 @@ form {
    border: 1px solid var(--soft-red);
 }
 
-p {
-   color: var(--light-blue);
+.error-text {
+   text-align: right;
+   color: var(--soft-red);
    font-size: .6rem;
+   font-style: italic;
+   padding: 5px 0;
+}
+
+p {
+   text-align: center;
+   color: var(--light-blue);
+   font-size: .7rem;
    font-weight: 500;
+   margin-top: 15px;
 }
 p span {
    color: var(--soft-red);
