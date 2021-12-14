@@ -27,6 +27,7 @@ export default function Form() {
          <form onSubmit={handleSubmit}>
             <div className={errors.firstName ? 'input-container border-red' : 'input-container'}>
                <input 
+                  className={errors.firstName ? 'input error' : 'input'}
                   placeholder="First Name"
                   type="text" 
                   name="firstName"
@@ -38,6 +39,7 @@ export default function Form() {
             {errors.firstName && <label className="error-text">{errors.firstName}</label>}
             <div className={errors.lastName ? 'input-container border-red' : 'input-container'}>
                <input 
+                  className={errors.lastName ? 'input error' : 'input'}
                   placeholder="Last Name"
                   type="text" 
                   name="lastName"
@@ -49,6 +51,7 @@ export default function Form() {
             {errors.lastName && <label className="error-text">{errors.lastName}</label>}
             <div className={errors.email ? 'input-container border-red' : 'input-container'}>
                <input 
+                  className={errors.email ? 'input error' : 'input'}
                   placeholder="Email Address"
                   type="email"
                   name="email"           
@@ -60,6 +63,7 @@ export default function Form() {
             {errors.email && <label className="error-text">{errors.email}</label>}
             <div className={errors.password ? 'input-container border-red' : 'input-container'}>
                <input 
+                  className={errors.password ? 'input error' : 'input'}
                   placeholder="Password"
                   type="password"
                   name="password"

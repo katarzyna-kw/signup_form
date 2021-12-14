@@ -63,7 +63,7 @@ form {
    height: auto;
 }
  
-.input-container input {
+.input {
    padding: 13px 20px;
    width: 82%;
    border-radius: 5px;
@@ -77,6 +77,10 @@ form {
 
 .border-red {
    border: 1px solid var(--soft-red);
+}
+
+.error {
+   color: var(--soft-red);
 }
 
 .error-text {
