@@ -4,6 +4,7 @@ import validate from './validate'
 import './Form.css'
 import errorIcon from '../img/icon-error.svg'
 
+
 export default function Form() {
 
    const [isSubmitted, setIsSubmitted] = useState(false);
