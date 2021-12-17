@@ -114,7 +114,7 @@ p span {
    font-weight: 600;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
    section {
       width: 50%;
    }

@@ -21,7 +21,7 @@ h6 {
    margin-right: 2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
    section {
       width: 50%;
       text-align: left;
