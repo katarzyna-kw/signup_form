@@ -86,6 +86,17 @@ form {
    background-color: transparent;
 }
 
+input:-webkit-autofill {
+   -webkit-box-shadow:0 0 0 50px white inset;
+   -webkit-text-fill-color: var(--dark-gray);
+}
+
+input:-webkit-autofill:focus {
+   -webkit-box-shadow: 0 0 0 50px white inset;
+   -webkit-text-fill-color: var(--dark-gray);
+} 
+
+
 .border-red {
    border: 1px solid var(--soft-red);
 }
