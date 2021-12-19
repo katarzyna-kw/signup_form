@@ -4,7 +4,7 @@ const validate = (values) => {
    const firstNameValidation = /^[a-zA-Z]+$/ig.test(values.firstName);
    const lastNameValidation = /^[a-zA-Z]+$/ig.test(values.lastName);
    const emailValidation = !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/ig.test(values.email);
-   const passwordValidation = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(values.password);
+   const passwordValidation = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,20}$/.test(values.password);
 
 
    if (!values.firstName) {
