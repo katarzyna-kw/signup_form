@@ -22,7 +22,7 @@ function App() {
   []);
 
   return (
-    <div className="App" style={{backgroundImage: `url(${bgUrl})` }}>
+    <div className="App" data-testid="app" style={{backgroundImage: `url(${bgUrl})` }}>
       <Card />
       <Footer />
     </div>
