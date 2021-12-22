@@ -34,7 +34,8 @@ Users should be able to:
 
 ### Screenshot
 
-![https://raw.githubusercontent.com/katarzyna-kw/signup_form/main/src/img/screenshot.png]('https://raw.githubusercontent.com/katarzyna-kw/signup_form/main/src/img/screenshot.png)
+![](./src/img/screenshot.png)
+
 
 
 ### Links
@@ -59,7 +60,7 @@ I used React to build a simple one-page site with a multi-input form in order to
 
 ### Useful resources
 
-- [Responsive Background Images Using React Hooks🍍](https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f) - https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f
+- [Responsive Background Images Using React Hooks🍍](https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f) - Great article on how to use React Hooks to responsively render background image based on window size.
 - [Form Validation Using Custom Hooks](https://upmostly.com/tutorials/form-validation-using-custom-react-hooks) - Extremely helpful article on form validation in React when you want to avoid using opinionated libraries to match a prototype.
 - [:focus-within pseudo-class example](https://codepen.io/danield770/pen/jweZPN) - This is an example of the :focus-within pseudo-class, found through the [following question on Stack Overflow](https://stackoverflow.com/questions/7876283/using-focus-to-style-outer-div)
 
