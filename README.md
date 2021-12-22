@@ -34,13 +34,13 @@ Users should be able to:
 
 ### Screenshot
 
-!['./src/img/screenshot.png]('./src/img/screenshot.png)
+![https://raw.githubusercontent.com/katarzyna-kw/signup_form/main/src/img/screenshot.png]('https://raw.githubusercontent.com/katarzyna-kw/signup_form/main/src/img/screenshot.png)
 
 
 ### Links
 npm
 - Solution URL: [https://github.com/katarzyna-kw/signup_form](https://github.com/katarzyna-kw/signup_form)
-- Live Site URL: [https://katarzyna-kw.github.io/signup-form/](https://katarzyna-kw.github.io/signup-form/)
+- Live Site URL: [https://katarzyna-kw.github.io/signup_form/](https://katarzyna-kw.github.io/signup_form/)
 
 ## My process
 
