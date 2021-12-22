@@ -23,7 +23,7 @@ export default function Form() {
    return (
       <section>
          <button className="trial">
-            <span>Try it free 7 days</span> then $20/mo. thereafter
+            <h4><span>Try it free 7 days</span> then $20/mo. thereafter</h4>
          </button>
          <form onSubmit={handleSubmit}>
             <div className={errors.firstName ? 'input-container border-red' : 'input-container'}>

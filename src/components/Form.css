@@ -14,6 +14,11 @@ button {
    font-size: .8rem;
 }
 
+h4 {
+   margin: 0;
+   padding: 0;
+}
+
 .trial {
    width: 100%;
    background-color: var(--blue);
