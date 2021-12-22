@@ -14,22 +14,22 @@ button {
    font-size: .9rem;
 }
 
-h4 {
-   margin: 0;
-   padding: 0;
-}
-
 .trial {
    width: 100%;
    background-color: var(--blue);
    margin-bottom: 1rem;
    box-shadow: 0px 6px 0px var(--neutral-shadow);
    padding: 20px 90px;
-
 }
 
-.trial span {
-   font-weight: 600;
+.trial-text {
+   margin: 0;
+   padding: 0;
+   font-weight: 400;
+}
+
+.trial-text span {
+   font-weight: 700;
 }
 
 .submit {
