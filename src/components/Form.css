@@ -12,7 +12,7 @@ section {
    color: var(--white);
    border-radius: 6px;
    font-family: 'Poppins', sans-serif;
-   font-size: .9rem;
+   font-size: .85rem;
    background-color: var(--blue);
    margin-bottom: 1rem;
    box-shadow: 0px 6px 0px var(--neutral-shadow);
@@ -55,13 +55,13 @@ form {
    border-radius: 6px;
    padding: 15px 30px 30px 30px;
    box-shadow: 0px 5.5px 0px var(--neutral-shadow);
-   height: 375px;
+   /* height: 460px; */
 }
 
 .input-container {
    position: relative;
    border: 1px solid var(--light-gray);
-   margin: 15px 0 0 0;
+   margin: 18px 0 5px 0;
    border-radius: 5px;
    display: flex;
    justify-content: space-between;
@@ -104,7 +104,6 @@ input:-webkit-autofill:focus {
    -webkit-box-shadow: 0 0 0 50px white inset;
    -webkit-text-fill-color: var(--dark-gray);
 } 
-
 
 .border-red {
    border: 1px solid var(--soft-red);
