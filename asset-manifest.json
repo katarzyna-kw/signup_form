@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/signup_form/static/css/main.06602814.chunk.css",
+    "main.css": "/signup_form/static/css/main.8ded3859.chunk.css",
     "main.js": "/signup_form/static/js/main.2520b391.chunk.js",
     "main.js.map": "/signup_form/static/js/main.2520b391.chunk.js.map",
     "runtime-main.js": "/signup_form/static/js/runtime-main.a8691ec3.js",
@@ -10,7 +10,7 @@
     "static/js/3.0f567217.chunk.js": "/signup_form/static/js/3.0f567217.chunk.js",
     "static/js/3.0f567217.chunk.js.map": "/signup_form/static/js/3.0f567217.chunk.js.map",
     "index.html": "/signup_form/index.html",
-    "static/css/main.06602814.chunk.css.map": "/signup_form/static/css/main.06602814.chunk.css.map",
+    "static/css/main.8ded3859.chunk.css.map": "/signup_form/static/css/main.8ded3859.chunk.css.map",
     "static/js/2.505d8801.chunk.js.LICENSE.txt": "/signup_form/static/js/2.505d8801.chunk.js.LICENSE.txt",
     "static/media/bg-intro-desktop.059183ee.png": "/signup_form/static/media/bg-intro-desktop.059183ee.png",
     "static/media/bg-intro-mobile.02ce3982.png": "/signup_form/static/media/bg-intro-mobile.02ce3982.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a8691ec3.js",
     "static/js/2.505d8801.chunk.js",
-    "static/css/main.06602814.chunk.css",
+    "static/css/main.8ded3859.chunk.css",
     "static/js/main.2520b391.chunk.js"
   ]
 }
