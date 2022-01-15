@@ -1,51 +1,35 @@
-section {
+.form__container {
    width: 100%;
    padding: 1rem;
    margin-top: 1.5rem;
    margin-left: 0rem;
 }
 
-.trial {
+.form__btn {
+   font-family: 'Poppins', sans-serif;
+   font-size: .9rem;
    border: none;
    text-align: center;
-   padding: 14px;
    color: var(--white);
    border-radius: 6px;
-   font-family: 'Poppins', sans-serif;
+}
+
+.form__btn--trial {
    background-color: var(--blue);
    margin-bottom: 1.2rem;
    box-shadow: 0px 6px 0px var(--neutral-shadow);
    padding: 20px 90px;
 }
 
-.trial-text {
+.form__btn--trial-text {
    margin: 0;
    padding: 0;
    font-weight: 400;
    font-size: .9rem;
 }
 
-.trial-text span {
+.form__btn--trial-text span {
    font-weight: 700;
-}
-
-.submit {
-   border: none;
-   padding: 14px;
-   color: var(--white);
-   border-radius: 6px;
-   font-family: 'Poppins', sans-serif;
-   font-size: 1.2rem;
-   background-color: var(--green);
-   font-weight: 600;
-   text-transform: uppercase;
-   box-shadow: 0px 3px 0px var(--green-shadow);
-   margin-top: 15px;
-   cursor: pointer;
-}
-
-.submit:hover {
-   background-color: var(--soft-green)
 }
 
 form {
@@ -58,7 +42,7 @@ form {
    /* height: 460px; */
 }
 
-.input-container {
+.form__input-container {
    position: relative;
    border: 1px solid var(--light-gray);
    margin: 18px 0 3px 0;
@@ -67,23 +51,23 @@ form {
    justify-content: space-between;
 }
 
-.input-container:focus-within {
+.form__input-container:focus-within {
    outline: var(--blue) auto 1px
 }
 
-.input:focus-visible {
-   outline: none
-}
- 
-.input-container > img {
+.form__input-container > img {
    position: absolute;
    top: 12px;
    right: 18px;
    width: 18px;
    height: auto;
 }
- 
-.input {
+
+.form__input:focus-visible {
+   outline: none
+}
+  
+.form__input {
    padding: 13px 20px;
    width: 82%;
    border-radius: 5px;
@@ -95,15 +79,41 @@ form {
    background-color: transparent;
 }
 
-input:-webkit-autofill {
+.form__input:-webkit-autofill {
    -webkit-box-shadow:0 0 0 50px white inset;
    -webkit-text-fill-color: var(--dark-gray);
 }
 
-input:-webkit-autofill:focus {
+.form__input:-webkit-autofill:focus {
    -webkit-box-shadow: 0 0 0 50px white inset;
    -webkit-text-fill-color: var(--dark-gray);
 } 
+
+.form__text {
+   text-align: center;
+   color: var(--light-blue);
+   font-size: .7rem;
+   font-weight: 500;
+   margin-top: 15px;
+}
+.form__text span {
+   color: var(--soft-red);
+   font-weight: 600;
+}
+
+.form__btn--submit {
+   padding: 14px;
+   background-color: var(--green);
+   font-weight: 600;
+   text-transform: uppercase;
+   box-shadow: 0px 3px 0px var(--green-shadow);
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+.form__btn--submit:hover {
+   background-color: var(--soft-green)
+}
 
 .border-red {
    border: 1px solid var(--soft-red);
@@ -113,7 +123,7 @@ input:-webkit-autofill:focus {
    color: var(--soft-red);
 }
 
-.error-text {
+.error__text {
    text-align: right;
    color: var(--soft-red);
    font-size: .6rem;
@@ -121,24 +131,12 @@ input:-webkit-autofill:focus {
    padding: 5px 0;
 }
 
-p {
-   text-align: center;
-   color: var(--light-blue);
-   font-size: .7rem;
-   font-weight: 500;
-   margin-top: 15px;
-}
-p span {
-   color: var(--soft-red);
-   font-weight: 600;
-}
-
 @media (min-width: 675px) {
-   section {
+   .form__container {
       width: 50%;
    }
 
-   .trial {
+   .form__btn--trial {
       padding: 20px;
    }
 }
