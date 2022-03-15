@@ -44,11 +44,11 @@ npm
 
 ### Built with
 
-- Semantic HTML5 markup
+- [React](https://reactjs.org/) - JS library
+- Semantic HTML5 markup principles
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 
 
 ### What I learned
